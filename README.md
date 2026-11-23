@@ -25,10 +25,12 @@ Classification with a simple baseline and comparison of models, following the si
 
 ## Status
 - [x] Project idea and dataset chosen
-- [ ] Lecturer approval
-- [ ] Business Understanding
-- [ ] Data Understanding
-- [ ] Data Preparation
-- [ ] Modelling
-- [ ] Evaluation
+- [x] Lecturer approval
+- [x] Business Understanding
+- [x] Data Understanding
+- [x] Data Preparation
+- [x] Modelling
+- [x] Evaluation
+- [ ] Deployment
+- [ ] Reflection and AI Collaboration Statement
 - [ ] Paper
