@@ -1,36 +1,43 @@
-# unsolved-homicides-analysis
+# Unsolved Homicides Analysis (CA2, DBMS71008 Data Analytics)
 
-# Unsolved Homicides Analysis (CRISP-DM)
+**Student:** Anastasiia Tkachenko (T00258101), MTU Kerry
+**Lecturer:** Andrew Shields
 
-Data Analytics (DBMS71008). Individual project.
+## Research question
+Which characteristics of a homicide case that are known when it is reported are associated with the case staying unsolved, and can we use them to predict if the case will be solved?
 
-## Question
-Which factors are associated with a homicide case in the US remaining unsolved?
+## Dataset
+- **Source:** Murder Accountability Project (MAP), case-level Supplementary Homicide Report, 1976–2025 (`SHR76_25a`)
+- **Size:** 929,433 rows, 31 columns
+- **Licence:** no licence is stated on the MAP website, so the data is **not uploaded** to this repository.
 
-## Data
-- Source: Murder Accountability Project (MAP), Supplementary Homicide Report, case-level file (SHR76_25)
-- Link: https://www.murderdata.org/p/data-docs.html
-- Unit of analysis: one row = one homicide case
-- Target: `Solved` (Yes/No)
-- Date downloaded: 12 Oct 2026
-- The data file is NOT included in this repository (size/licence). Download the CSV from the link above and put it in the `data/` folder.
+### How to get the data
+1. Go to https://www.murderdata.org/p/data-docs.html
+2. Download the case-level Supplementary Homicide Report file in **CSV** format.
+3. Rename the file to `SHR76_25a-2.csv` (the name used in the notebook).
 
-## Method
-Classification with a simple baseline and comparison of models, following the six CRISP-DM phases.
+The data dictionary from MAP is in `references/MAPdefinitionsSHR.pdf`.
 
 ## How to run
-1. Download the data file (see above)
-2. Open the notebook in `notebooks/` in Jupyter or Google Colab
-3. Run all cells in order
+1. Open `unsolved_homicides_analysis.ipynb` in Google Colab.
+2. Upload `SHR76_25a-2.csv` in the **Files** panel and wait until the upload is finished.
+3. Click **Runtime → Run all**.
 
-## Status
-- [x] Project idea and dataset chosen
-- [x] Lecturer approval
+**Libraries:** pandas, numpy, matplotlib, seaborn, scikit-learn (all are already installed in Google Colab).
+**Random seed:** 42.
+
+## Repository structure
+- `unsolved_homicides_analysis.ipynb` – main CRISP-DM notebook
+- `paper/` – final conference-style paper (PDF)
+- `references/` – MAP data dictionary
+- `README.md` – this file
+
+## Project status
 - [x] Business Understanding
 - [x] Data Understanding
 - [x] Data Preparation
 - [x] Modelling
 - [x] Evaluation
-- [ ] Deployment
-- [ ] Reflection and AI Collaboration Statement
-- [ ] Paper
+- [x] Deployment
+- [x] Reflection and AI Collaboration Statement
+- [x] Paper
